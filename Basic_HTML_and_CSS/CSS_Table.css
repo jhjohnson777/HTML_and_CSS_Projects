@@ -1,0 +1,19 @@
+table {
+    border: 2px solid steelblue;
+}
+
+td:hover {
+    background-color: dimgray;
+    color: aliceblue;
+}
+
+th {
+    background-color: azure;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+td {
+    color: darkslategray;
+}
+
