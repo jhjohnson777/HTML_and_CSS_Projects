@@ -1,0 +1,88 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d4d4d;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: #da7400;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #da7400;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.container {
+    display: block;
+    background-color: cornsilk;
+    border-bottom: 1.5px solid #ff8c00;
+    border-top: 1.5px solid #ff8c00;
+    margin: 0;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu_list {
+    list-style-type: none;
+    margin: 0;
+    
+}
+
+li {
+    display: inline-block;
+    color: cornsilk;       /* how to change font color of a hyperlink   */
+    padding: 5px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 20px 20px 10px 60px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 20px 60px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 10px 20px 10px 60px;
+}
+
+p{
+    font-size: medium;
+    margin: 10px 60px 10px 60px;
+}
+
+.form_container {
+    text-align: center;
+    width: 100%;
+    background-color: cornsilk;
+    padding: 20px;
+    
+}
+
+input {
+    border: none;
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.address {
+    width: 625px;
+}

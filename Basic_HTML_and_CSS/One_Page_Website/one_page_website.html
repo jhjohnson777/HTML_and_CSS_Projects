@@ -3,15 +3,20 @@
 <head>
     <title>Orange Juice Aficionados</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css"> 
 </head>
 <body>
     
     <!-- NAV -->
-    <nav>
-        <a href="#home">HOME</a><!-- HOME -->
-        <a href="#gallery">GALLERY</a><!-- GALLERY -->
-        <a href="#videos">VIDEOS</a><!-- VIDEOS -->
-        <a href="#contact">CONTACT US</a><!-- CONTACT -->
+    <nav class="menu">
+        <div class="container">
+            <ul class="menu_list">
+                <li><a href="#home">HOME</a></li><!-- HOME -->
+                <li><a href="#gallery">GALLERY</a></li><!-- GALLERY -->
+                <li><a href="#videos">VIDEOS</a></li><!-- VIDEOS -->
+                <li><a href="#contact">CONTACT US</a></li><!-- CONTACT -->
+            </ul>
+        </div>
     </nav>
     <!-- END NAV -->
     
@@ -30,7 +35,7 @@
     
     <!-- GALLERY -->
     <section id="gallery">
-        <h3>Gallery</h3>
+        <h2>Gallery</h2>
         
             <img src="images/image_1.webp" alt="Short glass of orange juice">
             <img src="images/image_2.webp" alt="Mug of orange juice with oranges">
@@ -57,19 +62,20 @@
         <h3>Contact Us</h3>
         <p>Please provide your contact information to become a member and receive our monthly newsletter.</p>
         
-        <form method="post">
-            <input type="text" value="First Name">
-            <input type="text" value="Last Name">
-            <input type="email" value="Email Address">
-            <input type="text" value="Street Address">
-            <input type="text" value="City">
-            <input type="text" value="Zip Code">
-            <input type="submit" value="Submit">
-            <details>
-            <summary>Terms and Conditions</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit euismod in pellentesque massa placerat duis ultricies. Facilisi etiam dignissim diam quis enim. Quis vel eros donec ac odio. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Maecenas volutpat blandit aliquam etiam erat. Diam phasellus vestibulum lorem sed. Ornare lectus sit amet est. Habitasse platea dictumst vestibulum rhoncus.</p>
-            </details>
-        
+        <div class="form_container">
+            <form method="post">
+                <input type="text" value="First Name">
+                <input type="text" value="Last Name"><br>
+                <input class="address" type="email" value="Email Address"><br>
+                <input class="address" type="text" value="Street Address"><br>
+                <input type="text" value="City">
+                <input type="text" value="Zip Code"><br>
+                <input type="submit" value="Submit">
+                <details>
+                <summary>Terms and Conditions</summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit euismod in pellentesque massa placerat duis ultricies. Facilisi etiam dignissim diam quis enim. Quis vel eros donec ac odio. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Maecenas volutpat blandit aliquam etiam erat. Diam phasellus vestibulum lorem sed. Ornare lectus sit amet est. Habitasse platea dictumst vestibulum rhoncus.</p>
+                </details>
+        </div>
         </form>
     
     
@@ -80,11 +86,15 @@
     <!-- FOOTER -->
     <footer>
         <!-- FOOTER NAV -->
-        <nav>
-        <a href="#home">HOME</a><!-- HOME -->
-        <a href="#gallery">GALLERY</a><!-- GALLERY -->
-        <a href="#videos">VIDEOS</a><!-- VIDEOS -->
-        <a href="#contact">CONTACT US</a><!-- CONTACT -->
+        <nav class="menu">
+            <div class="container">
+                <ul class="menu_list">
+                    <li><a href="#home">HOME</a></li><!-- HOME -->
+                    <li><a href="#gallery">GALLERY</a></li><!-- GALLERY -->
+                    <li><a href="#videos">VIDEOS</a></li><!-- VIDEOS -->
+                    <li><a href="#contact">CONTACT US</a></li><!-- CONTACT -->
+                </ul>
+            </div>
         </nav>
         <!-- END FOOTER NAV -->
         
