@@ -1,0 +1,156 @@
+.navbar {
+    overflow: hidden;
+    background-color: lightslategray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: whitesmoke;
+    color: darkslategray;
+}
+
+.main {
+    margin-top: 30px;
+    width: 100%;
+}
+
+p:hover {
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+img {
+    filter: grayscale(70%);
+    border-radius: 10px;
+}
+
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-right {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: smaller;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid cadetblue;
+    padding: 3px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(208, 236, 246);
+}
+
+.row {
+    color: darkslategray;
+    display: flex;
+    width: 70%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 75%;
+}
+
+.right {
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container_fade {
+    position: relative;
+    width: 70%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container_fade:hover .image {
+    opacity: 0.3;
+}
+
+.container_fade:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: lightslategray;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
