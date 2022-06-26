@@ -3,7 +3,8 @@
 <head>
     <title>Orange Juice Aficionados</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css"> 
+    <link rel="stylesheet" href="./CSS/one_page_website.css"> 
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 <body>
     
@@ -36,22 +37,85 @@
     <!-- GALLERY -->
     <section id="gallery">
         <h2>Gallery</h2>
-        
-            <img src="images/image_1.webp" alt="Short glass of orange juice">
-            <img src="images/image_2.webp" alt="Mug of orange juice with oranges">
-            <img src="images/image_3.jpeg" alt="Bowl of oranges with some of them peeled">
-            <img src="images/image_4.jpeg" alt="Orderly rows of sliced oranges">
-            <img src="images/image_5.jpeg" alt="Pile of whole oranges">
-            <img src="images/image_6.jpeg" alt="Large amount of freshly harvested orange with leaves still attached">
-            <img src="images/image_7.jpeg" alt="Oranges still on the tree against a blue sky">
-        
+        <div class="row">
+            <div class="column">
+                <img src="images/image_1sm.webp" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Short glass of orange juice">
+            </div>
+
+            <div class="column">    
+                <img src="images/image_2sm.webp" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Mug of orange juice with oranges">
+            </div>
+
+            <div class="column">
+                <img src="images/image_3sm.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Bowl of oranges with some of them peeled">
+            </div>
+            
+            <div class="column">
+                <img src="images/image_4sm.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Orderly rows of sliced oranges">
+            </div>
+            
+        </div>
+
+        <!-- The Modal/Lightbox-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/image_1.webp" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/image_2.webp" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/image_3.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/image_4.jpeg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text-->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="images/image_1sm.webp" onclick="currentSlide(1)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/image_2sm.webp" onclick="currentSlide(2)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/image_3sm.jpeg" onclick="currentSlide(3)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="images/image_4sm.jpeg" onclick="currentSlide(4)" alt="">
+                </div>
+
+            </div>
+        </div>
      </section>
     <!-- END GALLERY -->
     
     <!-- VIDEOS -->
     <section id="videos">
         <h3>Videos</h3>
-        <iframe width="640" height="480" src="https://www.youtube.com/embed/T8KJGtMGMSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>">
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/T8KJGtMGMSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     
     </section>
